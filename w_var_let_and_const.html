@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+<body>
+    <h2><mark>DIFFERENCE B/W var , let , const KEYWORDS IN JAVASCRIPT</mark></h2>
+    <script>
+        /* syntax - var varname = value ;
+           JavaScript uses reserved keyword var to declare a variable. A variable must have a unique name*/
+        var name="TEJASH"
+        var age=19
+        var fields=["sports","research and development","machine learning","data science"]
+        var q= null;
+        console.log({name,age,fields,q});
+    
+    
+        /* let allows us to declare variables that are limited to the scope of a block statement,
+            or expression on which it is used, unlike the var keyword, which defines a variable globally, 
+            or locally to an entire function regardless of block scope.*/
+         {
+             let name="raghu"
+             let age= 56
+             console.log({name,age});
+         }
+         console.log({name,age});
+        /*Difference between var and let :-
+            var and let are both used for variable declaration in javascript but the difference between them is that var is function scoped and let is block scoped.
+            It can be said that a variable declared with var is defined throughout the program as compared to let.*/
+        
+
+         /* const var_name=value;
+            The const keyword works like the let keyword. 
+            But the const keyword creates block-scoped variables whose values can't be reassigned.*/
+            const friends=["pranesh","nitin"];
+            console.log(friends);
+            friends.push("pavan");
+            friends.push("shreecharan");
+            friends.push("vignesh");
+            console.log(friends);
+        // VALUES CANNOT BE RE-ASSIGNED IN CONST
+            friends=["tejsah","nitin"];
+            console.log(friends);
+
+    </script>
+</body>
+</html>
