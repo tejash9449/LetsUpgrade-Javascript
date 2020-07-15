@@ -1,0 +1,124 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+</head>
+<body>
+    <h1><mark>Console function in JAVASCRIPT</mark></h1>
+    
+    <script>
+        /*               console.clear()
+
+        Used to clear the console.the console will be cleared.
+        */
+        //Example
+        console.clear();
+
+        /*           console.log()
+
+        Mainly used to log(print) the output to the console. 
+        we can put any type inside the log(),be it a String,num,Array,Object,Boolean etc */
+
+        //   Example
+
+        console.log('TEJASH');
+        console.log(96);
+        console.log(true);
+        console.log(null);
+        console.log(undefined);
+        console.log([1,2,3,"tej",10]); // array
+        console.log({'a':1,'b':2,'c':3,'d':4});// obj
+        
+        /*           console.error() 
+        
+        Used to log error message to the console.
+        Usefull in testing of code.By default the error message will be highlighted with red color.*/
+
+        // Example
+        console.error('this is a simple error');
+
+        /*             console.warn()
+        
+        Used to log warning message to the console.
+        By default the warning message will be highlight with red color.*/
+
+        // Example
+        console.warn('this is a warning message');
+
+           
+        
+        /*               console.time() and console.timeEnd()
+        Whenever we want to know the amount of time spend by a block or a function, we can make use of the time() and timeEnd() methods provided by the javascript console object. They take a label which must be same, and the code inside can be anything( function, object, simple console).*/
+
+        //Example
+        console.time('time:');
+        let fun1= function() {
+            console.log("fun 1 is running.");
+        }
+        let fun2=function() {
+            console.log("fun 2 is running....");
+        }
+        console.timeEnd('time:');
+
+        /*               console.table()
+        This method allows us to generate a table inside a console. The input must be an array or an object which will be shown as a table.*/
+
+        // Example
+        console.table({'a':1,'b':2});
+
+        /*               console.count()
+        This method is used to count the number that the function hit by this counting method.*/
+
+        // Example
+        for(i=0;i<=5;i++)
+        {
+            console.count(i);
+        }
+
+        /*              console.group() and console.groupEnd()
+        group() and groupEnd() methods of the console object allows us to group contents in a separate block, which will be indented. Just like the time() and the timeEnd() they also accepts label, again of same value.*/
+
+        // Ecample
+        console.group('simple'); 
+        console.warn('warning!'); 
+        console.error('error here'); 
+        console.log('vivi vini vici'); 
+        console.groupEnd('simple'); 
+        console.log('new section');
+
+        /*                console.groupCollapsed()
+        Creates a new inline group in the console. However, the new group is created collapsed. The user will need to use the disclosure button to expand it*/
+
+        // Example
+        console.log("Hello world!");
+        console.groupCollapsed();
+        console.log("Hello again, this time inside a collapsed group!");
+        
+        /*               console.assert()
+        Writes an error message to the console if the assertion is false*/
+
+        // Example
+        console.assert(document.getElementById("demo"), "You have no element with ID 'demo'");
+
+        /*               console.trace()
+        Outputs a stack trace to the console*/
+        function myFunction() {
+            myOtherFunction();
+        }
+
+        function myOtherFunction() {
+            console.trace();
+        }
+
+        /*               console.info()
+        Outputs an informational message to the console*/
+        console.info("Hello world!");        
+ 
+    </script>
+    
+</body>
+</html>
