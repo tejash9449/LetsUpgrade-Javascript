@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+</head>
+<body>
+    <h1><mark>The various array method</mark></h1>
+    <script>
+        let friends=["pranesh","nitin"]
+        console.log(friends);
+
+        console.log(friends.length);// lenght of the Array
+
+        friends.unshift('vignesh'); // appending the element at the frist
+        console.log(friends);
+
+        console.log(friends.shift(),friends);// removing the element frm the frist and returns that valve
+
+
+        console.log(friends.toString());//converts array to the string
+
+        var fruite=['banana','mango','orange','apple'];
+        console.log(fruite); 
+        fruite.splice(1,2,'kiwi','sugercane'); //syntax :- splice(start: number, deleteCount: number, ...items: string[]): string[]   >The zero-based location in the array from which to start removing elements
+        console.log(fruite); 
+        
+        let animals=['lion','tiger','elephant'];
+        console.log(fruite.concat(animals)); //concatenates(joins) the arrays fruite and animals
+
+        let str ="visit microsoft!";
+        let res = str.replace("microsoft","LetsUgrade");
+        //syntax : string.replace(searchvalue,newvalue)
+        console.log(res); //A object can search for and replace matches within a string.
+
+
+        let substr=str.substring(1,4); /*substring(start: number, end?: number): string
+        The zero-based index number indicating the beginning of the substring.*/
+        console.log(substr);
+
+
+
+        
+        
+
+
+        
+    </script>
+</body>
+</html>
