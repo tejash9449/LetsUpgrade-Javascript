@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3-assignment 3</title>
+</head>
+<body>
+<h1>Write a program to take marks as input from the user and grade him accordingly using switch.</h1>
+<script>
+    console.log("grading the students");
+
+    let marks=Number(prompt("Enter the student marks"));
+    switch (parseInt(marks/10)) {
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        console.log(`Marks are ${marks} and grade is C`);
+        break;
+        case 4:
+        console.log(`Marks are ${marks} and grade is C+`);
+        break;
+        case 5:
+        case 6:
+        console.log(`Marks are ${marks} and grade is B`);
+        break;
+        case 7:
+        console.log(`Marks are ${marks} and grade is B+`);
+        break;
+        case 8:
+        console.log(`Marks are ${marks} and grade is A`);
+        break;
+        case 10:
+        case 9:
+        console.log(`Marks are ${marks} and grade is A+`);
+        break;
+    
+        default:
+        console.log('Enter the correct marks');
+            break;
+    }
+</script>
+</body>
+</html>
