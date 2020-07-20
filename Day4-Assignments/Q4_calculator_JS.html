@@ -15,7 +15,7 @@ Square root, Percentage. -->
         console.log("CALCULATOR");
 
         do{
-        let Operation= prompt("calculator:\n Operation to perform(for squar root type'sqroot' & for percentage typr'%'(Number 2 is total no.)):-");
+        let Operation= prompt("calculator:\n Enter Operation to perform\n  Note:for squar root type'sqroot' \n  for percentage typr'%'(Number 2 is total no.)):-");
         var res;
         if(Operation==='sqroot'){
             var num =+prompt("Enter +ve Number:");
@@ -49,7 +49,7 @@ Square root, Percentage. -->
         }
         console.log(res);
         }
-        }while(confirm("TO CONTINUE....."))
+        }while(confirm(`RESULT = ${res}\n TO CONTINUE PRESS OK\n TO EXIT PRESS CANCEL`))
         
 
     </script>
