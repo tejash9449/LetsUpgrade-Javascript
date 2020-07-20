@@ -20,21 +20,21 @@ Then log the total commission earned by him. -->
     <script>
         console.log("Sale's person commission")
         let n=+ prompt("Enter the sales made by your employee during the year");
-        let i=0;
+        let commission=0;
         if(n<=5000){
-            i=2;
+            commission=n*0.02;
         } 
         else if(n>=5001 && n<=10000){
-            i=5;
+            commission=(5000*0.02) + ((n-5000)*0.05);
         } 
         else if(n>=10001&&n<=20000){
-            i=7;
+            commission=(5000*0.02) + (5000*0.05) + ((n-10000)*0.07);
         }
         else if(n>20000) {
-            i=10;
+            commission=(5000*0.02) + (5000*0.05)+(10000*0.07) + ((n-20000)*0.1);
         }
         
-        console.log(`The Total commission earned by him : ${i} %`)
+        console.log(`The Total commission earned by him : ${commission}`)
     </script>
 </body>
 </html>
