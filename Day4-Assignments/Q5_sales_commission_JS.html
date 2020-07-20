@@ -1,0 +1,40 @@
+ <!-- Question 5:
+You are managing a sales department for your company, you want to reward your employees based on
+the sales made by them during the year.
+The criteria is as follows:
+1. Sales from 0-5000 : 2%
+2. Sales from 5001 - 10000 : 5%
+3. Sales from 10001 - 20000 : 7%
+4. Above 20000 - 10%
+Then log the total commission earned by him. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4-Question 5</title>
+</head>
+<body>
+    <h1>You are managing a sales department for your company, you want to reward your employees based on the sales made by them during the year.Then log the total commission earned by him</h1>
+    <script>
+        console.log("Sale's person commission")
+        let n=+ prompt("Enter the sales made by your employee during the year");
+        let i=0;
+        if(n<=5000){
+            i=2;
+        } 
+        else if(n>=5001 && n<=10000){
+            i=5;
+        } 
+        else if(n>=10001&&n<=20000){
+            i=7;
+        }
+        else if(n>20000) {
+            i=10;
+        }
+        
+        console.log(`The Total commission earned by him : ${i} %`)
+    </script>
+</body>
+</html>

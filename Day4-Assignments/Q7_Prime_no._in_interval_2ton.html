@@ -1,0 +1,38 @@
+<!-- Question 7:
+An integer number greater than 1 is called a prime if it cannot be divided without a remainder by anything
+except 1 and itself.
+In other words, n > 1 is a prime if it can’t be evenly divided by anything except 1 and n.
+For example, 5 is a prime, because it cannot be divided without a remainder by 2, 3 and 4.
+Write the code which outputs prime numbers in the interval from 2 to n.
+For n = 10 the result will be 2,3,5,7.
+P.S. The code should work for any n, not be hard-tuned for any fixed value -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4-Question 7</title>
+</head>
+<body>
+<h1><mark>PRIME NO. GENERATOR IN THE INTERVAL (2,n)</mark></h1>
+<script>
+    console.log("PRIME NO.");
+    var n= +prompt("Enter the number");
+let c=0;
+let a=[];
+    for(let i=1;i<=n;i++){
+        c=0;
+        for(let j=1;j<=i;j++){
+            if(i%j==0){
+            c++;
+        }
+        }
+        if(c==2){
+        a.push(i);
+        }
+    }
+    console.log(a);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!-- Question 4:
+Make a Calculator in Javascript which can do operations as Addtion, Subtraction, Multiplication, Division,
+Square root, Percentage. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4-Question 4</title>
+</head>
+<body>
+    <h1>Make a <mark>Calculator in Javascript</mark> which can do operations as Addtion, Subtraction, Multiplication, Division,Square root,Percentage.</h1>
+    <script>
+        debugger; // debugger is used to debug any error
+        console.log("CALCULATOR");
+
+        do{
+        let Operation= prompt("calculator:\n Operation to perform(for squar root type'sqroot' & for percentage typr'%'(Number 2 is total no.)):-");
+        var res;
+        if(Operation==='sqroot'){
+            var num =+prompt("Enter +ve Number:");
+            res=Math.sqrt(num);
+            console.log(res);// logs the result in the console
+        }
+        else{
+        let num1=+prompt("Number 1:");
+        let num2=+prompt("Number 2:");
+        
+        switch (Operation) {
+            case '+':
+                res = num1 + num2;
+                break;
+            case '-':
+                res = num1-num2;
+                break;
+            case '*':
+                res =num1*num2;
+                break;
+            case '/':
+                if(num2==0){alert("ERROR:NOT DIVIDE BY ZERO");}
+                res = num1/num2;
+                break;
+            case '%':
+                res=(num1/num2)*100;
+                break;
+            default:
+            alert("ERROR:ENTER THE CORRECT OPERATOR");
+                break;
+        }
+        console.log(res);
+        }
+        }while(confirm("TO CONTINUE....."))
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!-- Question 2:
+Destructure the following object:
+const student={
+    name:"Helsinki",
+    age:24,
+    projects:{
+        diceGame: "Two players dice game using JavaScript"
+    }
+} -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4-Question 2</title>
+</head>
+<body>
+    <h1><mark>Destructuring Object</mark></h1>
+    <script>
+        const student={
+            name:"Helsinki",
+            age:24,
+            projects:{
+                diceGame: "Two players dice game using JavaScript"
+            }
+        }
+        const {name,age,projects:{diceGame}}=student;
+        console.log(`Name: ${name}`);
+        console.log(`Age:${age}`);
+        console.log(`project:${diceGame}`);
+    </script>
+</body>
+</html>

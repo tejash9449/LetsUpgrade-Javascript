@@ -1,0 +1,42 @@
+<!-- Question 8
+    Replace Function Expression with arrow functions in the code below:
+        function ask(question,yes,no){
+            if(confirm()) yes()
+            else no();
+        }
+
+        ask(
+            "DO you agree?",
+            function() {alert("You agreed.");},
+            function() {alert("You canceled the execution.");}
+        )  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4-Question 8</title>
+</head>
+<body>
+    <h1><mark>Arrow functions</mark></h1>
+    <script>
+        /* Replace Function Expression with arrow functions in the code below:
+        function ask(question,yes,no){
+            if(confirm()) yes()
+            else no();
+        }
+
+        ask(
+            "DO you agree?",
+            function() {alert("You agreed.");},
+            function() {alert("You canceled the execution.");}
+        ) */
+        ask = (question,yes,no) =>{if(confirm(question)) yes();
+        else no();}
+
+        ask("DO you agree?",()=>{alert("You agreed.");},()=>{alert("You canceled the execution.");})
+        
+
+    </script>
+</body>
+</html>
