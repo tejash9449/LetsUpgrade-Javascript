@@ -1,0 +1,32 @@
+<!-- Question 3:
+Using promises/async await/fetch get the random todos from the json placeholder api. And log all the
+completed todos to the console.
+API Endpoint : https://jsonplaceholder.typicode.com/todos -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5-Question 3</title>
+</head>
+<body>
+    <h3>Using promises/async await/fetch get the random todos from the json placeholder api. And log all the completed todos to the console.</h3>
+    <script>
+        async function getAPIData(url) {
+        try {
+            let response = await fetch(url);
+            let data = await response.json();
+
+            console.log(data);
+        } catch(error) {
+            console.log(error);
+        }
+    }
+
+    let url = "https://jsonplaceholder.typicode.com/todos/96";
+    getAPIData(url);
+	
+    </script>    
+</body>
+</html>

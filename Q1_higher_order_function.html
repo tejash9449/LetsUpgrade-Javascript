@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5-Question 1</title>
+</head>
+<body>
+    <h3><mark>higher order function</mark></h3>
+    <script>
+       var name = window. prompt("Enter a number");
+        
+        if (name>=0){
+           console.log(name)}
+        
+        else {
+            while(name<=0){
+                name = window. prompt("Enter +ve number");
+                if(name>=0){
+                    console.log(name);
+                } 
+            }
+        } 
+        arr=[];
+        for(let i=0;i<=name;i++)
+        {
+            arr.push(i);
+            
+
+        }
+        console.log(arr);       
+        let odd = arr.filter((ele)=>ele%2!==0);
+        console.log(odd);
+        let oddcube = arr.filter((ele)=>ele%2!==0).map(ele=>ele**3);
+        console.log(oddcube);
+    </script>
+    
+</body>
+</html>

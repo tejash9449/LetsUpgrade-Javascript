@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 2</title>
+</head>
+<body>
+    <H1><MARK>ASSIGNMENT 2 DAY 5</MARK></H1>
+    <SCRIPT>
+        class user{
+            constructor(name,age,email){
+                this.name= name;
+                this.age= age;
+                this.email= email;
+                this.cource=[];
+                this.lucoins=0;
+            }
+            // LOGIN AND LOGOT METHODS
+            login(){
+                console.log(`${this.name} has logged in`)
+                return this;
+            }
+            logout(){
+                console.log(`${this.name} has logged out`)
+                return this;
+            }  
+              
+           
+        }
+        
+        let user1=new user("dilpi","25","dilpi@gmail.com")
+        let user2=new user("raki","60","raki@gmail.com")
+       console.log(user1.login());
+       console.log(user2.logout());
+        
+        
+        class moderator extends user{
+            constructor(name,age,email,role){
+                super(name,age,email);
+                this.role="moderator"
+            }
+    
+           addlucoins(user){
+               user.lucoins++;
+               //console.log(user)
+           } 
+           removelucoins(user){
+               user.lucoins--;
+               //console.log(user)
+           }               
+                        
+        }
+        
+        let mod= new moderator("berli",25,"berlin@gmail.com")
+       // let users=[user1,user2]
+        
+        mod.addlucoins(user1);
+        mod.addlucoins(user1);
+        mod.addlucoins(user2);
+        mod.removelucoins(user1);
+        
+
+        class admin extends moderator{
+            addcource(user,cource){
+                user.cource.push(cource);
+               // console.log(user);
+            }
+        }
+        let admi=new admin("rio",26,"rio@gmail.com");
+        let users=[user1,user2,mod,admi];
+        
+        admi.addcource(user1,'java');
+        admi.addcource(user2,'python');
+        admi.addcource(user1,'BIGDATA')
+        admi.addcource(user2,'BLOCKCHAIN')
+        console.log(users);
+       
+        
+
+
+
+    </SCRIPT>
+    
+</body>
+</html>
