@@ -1,0 +1,42 @@
+<!-- Question 2:
+Write a program that will display the multiplication table of a number on the webpage in a proper
+format. Take the input from the user.
+Input - 5
+Output - 5 x 1 = 5
+ 5 x 2 = 10
+ and so on… -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Day 6-Question 2</title>
+</head>
+<body>
+    <h2>MULTIPLICATION TABLE</h2>
+    <ul id="multiplication"></ul>
+    <script>
+        var input= +prompt("enter a number");
+        console.log(`the number is ${input}`);
+        console.log(`multipliction table of ${input}`);
+        let arr=[];
+        num=1;
+        while(num<=10){
+           let ans = input * num;
+           let final=(console.log(`${input} x ${num} = ${ans}`))
+           arr.push(ans);
+           num++;
+        }
+        console.log(arr);
+        const list=document.getElementById('multiplication');
+
+        console.log(list);
+        let n=1;
+        for(let i=0;i<10;i++){
+            n+=i;
+            list.innerHTML += `<li>${input} x ${i+1} =${arr[i]}</li>`
+        }
+    </script>
+</body>
+</html>

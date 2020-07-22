@@ -1,0 +1,27 @@
+<!-- Question 1:
+Write a program that will iterate over an array of colors and change the background of the page
+after 5 seconds. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6-Question 1</title>
+</head>
+<body>
+    <script>
+    var colors = ['red', 'green', 'blue', 'yellow', 'pink', 'purple'];
+var i = 0;
+setInterval(function () {
+   document.body.style.backgroundColor=colors[i];
+   
+   if (colors[i]=='purple') {
+       i= 0;
+   } else {
+       i++;
+   }
+},5000);
+    </script>
+    
+</body>
+</html>
