@@ -1,0 +1,55 @@
+<!-- Write a program to make a To-Do List which has the following functions:
+a. Add
+b. Remove
+c. Should store the data in local storage -->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <script src="https://kit.fontawesome.com/653b31a42d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- container-->
+    <div class="container">
+        <!-- header -->
+        <div class="header">
+            To Do List
+        </div>
+        <!-- /header -->
+        <!-- content -->
+        <div class="content">
+            <!-- dateAndClear -->
+            <div class="dateAndClear">
+                <!-- date -->
+                <div id="date"></div>
+                <!-- /date -->
+                <!-- clear -->
+                <div class="clear">
+                    <i class="fas fa-sync-alt" onclick="UI.clearToDo()"></i>
+                </div>
+                <!-- /clear -->
+            </div>
+            <!-- /dateAndClear -->
+            <!-- us list -->
+            <ul id="list">
+                
+            </ul>
+            <!-- /us list -->
+        </div>
+        <!-- /content -->
+        <!-- addToDo -->
+        <div class="addToDo">
+            <i class="fas fa-plus-circle co"></i>
+            <input type="text" id="input" placeholder="Add new item">
+        </div>
+        <!-- /addToDo -->
+    </div>
+    <!-- /container-->
+    <script src="script.js"></script>
+</body>
+</html>
